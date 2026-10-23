@@ -1,16 +1,91 @@
-## Hi there 👋
+<div align="center">
 
-<!--
-**BasitMirza0/BasitMirza0** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Hi, I'm Basit Mirza 👋
 
-Here are some ideas to get you started:
+### Flutter Developer • AI/ML Enthusiast • Computer Vision Builder
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+I build mobile applications that combine **Flutter**, **Firebase**, **FastAPI** and practical **AI/ML** workflows.
+
+[![GitHub](https://img.shields.io/badge/GitHub-BasitMirza0-181717?style=for-the-badge&logo=github)](https://github.com/BasitMirza0)
+
+</div>
+
+---
+
+## 👨‍💻 About Me
+
+- 📱 Focused on **Flutter mobile application development**
+- 🤖 Interested in **AI/ML, computer vision and intelligent app features**
+- 🔥 Comfortable integrating **Firebase Authentication, Firestore and Google Sign-In**
+- ⚡ Build Python APIs with **FastAPI** and connect them to Flutter clients
+- 🧠 Worked with **YOLO, OpenCV and Google ML Kit** for vision-based features
+- 🚀 Currently strengthening my portfolio with production-style Flutter + AI projects
+
+---
+
+## 🛠️ Tech Stack
+
+### Mobile
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)
+
+### Backend & Cloud
+![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=flat-square&logo=firebase&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+
+### AI / Computer Vision
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+![YOLO](https://img.shields.io/badge/YOLO-111F68?style=flat-square)
+![Google ML Kit](https://img.shields.io/badge/Google_ML_Kit-4285F4?style=flat-square&logo=google&logoColor=white)
+
+### Tools
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+
+---
+
+## 🚀 Featured Projects
+
+### 🍽️ [FoodLens AI](https://github.com/BasitMirza0/foodlens-ai)
+
+AI-powered Flutter food assistant for ingredient scanning, nutrition tracking, smart recipes, pantry management and meal planning.
+
+**Stack:** Flutter • Dart • Firebase • FastAPI • Gemini • USDA FoodData Central
+
+---
+
+### 🛡️ [AI Guard — Exam Monitoring](https://github.com/BasitMirza0/ai-guard-exam-monitoring)
+
+Flutter-based examination monitoring system combining local ML Kit monitoring with remote YOLO image/video analysis, Firebase authentication and a FastAPI backend.
+
+**Stack:** Flutter • Firebase • Python • FastAPI • YOLO • OpenCV • Google ML Kit
+
+---
+
+## 🎯 Current Focus
+
+- Flutter app architecture and polished mobile UX
+- AI-powered mobile application features
+- Computer vision integration
+- FastAPI backends for mobile apps
+- Firebase authentication and data workflows
+- Building clean, documented, testable portfolio projects
+
+---
+
+## 📌 Portfolio Highlights
+
+| Project | Focus | Repository |
+| --- | --- | --- |
+| **FoodLens AI** | AI food assistant, nutrition, recipes, pantry & planning | [View project](https://github.com/BasitMirza0/foodlens-ai) |
+| **AI Guard** | Exam monitoring, computer vision, YOLO & FastAPI | [View project](https://github.com/BasitMirza0/ai-guard-exam-monitoring) |
+
+---
+
+<div align="center">
+
+### Build • Learn • Improve • Repeat 🚀
+
+</div>
