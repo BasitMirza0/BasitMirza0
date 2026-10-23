@@ -108,8 +108,8 @@ I’m a developer focused on building **intelligent mobile applications** where 
 ## Achievements & Badges
 
 <p align="center">
-  <a href="https://holopin.io/@BasitMirza0">
-    <img src="https://holopin.io/api/user/board?user=BasitMirza0" alt="Basit Mirza's Holopin badge board" width="100%">
+  <a href="https://holopin.io/@basitmirza0">
+    <img src="https://holopin.me/basitmirza0" alt="Basit Mirza's Holopin badge board" width="100%">
   </a>
 </p>
 
