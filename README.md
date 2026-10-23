@@ -105,6 +105,16 @@ I’m a developer focused on building **intelligent mobile applications** where 
 - Designing **Firebase authentication and data workflows**
 - Improving testing, documentation and deployment quality across portfolio projects
 
+## Achievements & Badges
+
+<p align="center">
+  <a href="https://holopin.io/@BasitMirza0">
+    <img src="https://holopin.io/api/user/board?user=BasitMirza0" alt="Basit Mirza's Holopin badge board" width="100%">
+  </a>
+</p>
+
+<sub>Holopin badges are verifiable digital credentials earned through communities, events and technical activities. The board updates automatically as new badges are added.</sub>
+
 ## Portfolio Principles
 
 > Build features that work. Document what is real. Test what matters. Keep the public repository clean.
