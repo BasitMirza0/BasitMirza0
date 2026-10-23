@@ -14,12 +14,12 @@ I build mobile applications that combine **Flutter**, **Firebase**, **FastAPI** 
 
 ## About Me
 
-- **Mobile Development:** Focused on Flutter application development
-- **AI & Computer Vision:** Interested in AI/ML, computer vision and intelligent app features
-- **Firebase:** Experienced with Firebase Authentication, Firestore and Google Sign-In
-- **Backend Development:** Build Python APIs with FastAPI and connect them to Flutter clients
-- **Vision Technologies:** Worked with YOLO, OpenCV and Google ML Kit
-- **Current Focus:** Strengthening my portfolio with production-style Flutter + AI projects
+- <img src="https://cdn.simpleicons.org/flutter/02569B" width="18" align="absmiddle" alt="Flutter"> **Mobile Development:** Focused on Flutter application development
+- <img src="https://cdn.simpleicons.org/opencv/5C3EE8" width="18" align="absmiddle" alt="OpenCV"> **AI & Computer Vision:** Interested in AI/ML, computer vision and intelligent app features
+- <img src="https://cdn.simpleicons.org/firebase/DD2C00" width="18" align="absmiddle" alt="Firebase"> **Firebase:** Experienced with Firebase Authentication, Firestore and Google Sign-In
+- <img src="https://cdn.simpleicons.org/fastapi/009688" width="18" align="absmiddle" alt="FastAPI"> **Backend Development:** Build Python APIs with FastAPI and connect them to Flutter clients
+- <img src="https://cdn.simpleicons.org/python/3776AB" width="18" align="absmiddle" alt="Python"> **Vision Technologies:** Worked with YOLO, OpenCV and Google ML Kit
+- <img src="https://cdn.simpleicons.org/github/181717" width="18" align="absmiddle" alt="GitHub"> **Current Focus:** Strengthening my portfolio with production-style Flutter + AI projects
 
 ---
 
