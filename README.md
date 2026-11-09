@@ -121,6 +121,12 @@ I’m a developer focused on building **intelligent mobile applications** where 
   <img src="https://raw.githubusercontent.com/BasitMirza0/BasitMirza0/output/dragon-contribution-graph.svg" alt="Dragon contribution graph" width="100%">
 </p>
 
+## 🐍 BASIT
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/BasitMirza0/BasitMirza0/main/basit-snake.svg" alt="Snake eating BASIT" width="100%">
+</p>
+
 ## Portfolio Principles
 
 > Build features that work. Document what is real. Test what matters. Keep the public repository clean.
