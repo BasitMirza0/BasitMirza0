@@ -115,12 +115,6 @@ I’m a developer focused on building **intelligent mobile applications** where 
 
 <sub>Holopin badges are verifiable digital credentials earned through communities, events and technical activities. The board updates automatically as new badges are added.</sub>
 
-## 🐉 Contribution Graph
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/BasitMirza0/BasitMirza0/output/dragon-contribution-graph.svg" alt="Dragon contribution graph" width="100%">
-</p>
-
 ## 🐍 BASIT
 
 <p align="center">
