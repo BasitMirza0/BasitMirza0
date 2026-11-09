@@ -1,0 +1,89 @@
+name: Generate dragon contribution graph
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Generate SVG via snk action
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/dragon-contribution-graph.svg?palette=github-dark
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Replace pacman sprite with dragon
+        run: |
+          cat << 'SCRIPT' > replace.mjs
+          import fs from 'fs'
+          const svgPath = 'dist/dragon-contribution-graph.svg'
+          let svg = fs.readFileSync(svgPath, 'utf8')
+          // Dragon pixel art — 14px wide, 14px tall, origin at 0,0
+          const dragon = `
+          <!-- Dragon body -->
+          <rect x="3" y="4" width="8" height="7" rx="1" fill="#cc0000"/>
+          <!-- Head -->
+          <rect x="8" y="1" width="5" height="5" rx="1" fill="#cc0000"/>
+          <!-- Snout -->
+          <rect x="12" y="3" width="2" height="2" fill="#aa0000"/>
+          <!-- Eye -->
+          <rect x="10" y="2" width="1.5" height="1.5" fill="#ffcc00"/>
+          <!-- Horn -->
+          <rect x="9" y="0" width="1.5" height="2" fill="#880000"/>
+          <!-- Wing upper -->
+          <rect x="1" y="2" width="4" height="3" rx="1" fill="#880000"/>
+          <rect x="0" y="1" width="2" height="2" fill="#660000"/>
+          <!-- Wing lower -->
+          <rect x="1" y="7" width="4" height="3" rx="1" fill="#880000"/>
+          <rect x="0" y="8" width="2" height="2" fill="#660000"/>
+          <!-- Tail -->
+          <rect x="0" y="5" width="4" height="2" fill="#aa0000"/>
+          <!-- Legs -->
+          <rect x="4" y="11" width="2" height="2" fill="#aa0000"/>
+          <rect x="8" y="11" width="2" height="2" fill="#aa0000"/>
+          <!-- Fire breath -->
+          <rect x="14" y="2" width="4" height="1.5" fill="#ff6600" opacity="0.95"/>
+          <rect x="14" y="3.5" width="5" height="1.5" fill="#ff8800" opacity="0.8"/>
+          <rect x="14" y="5" width="4" height="1.5" fill="#ffaa00" opacity="0.6"/>
+          <rect x="14" y="6.5" width="3" height="1" fill="#ff6600" opacity="0.4"/>`
+          // snk defines pacman as <symbol id="p0"> and <symbol id="p1"> (open/closed mouth)
+          // Replace both symbol contents with dragon, keep the symbol wrapper and id
+          svg = svg.replace(
+            /(<symbol[^>]*id="p\d+"[^>]*>)([\s\S]*?)(<\/symbol>)/g,
+            (match, open, content, close) => `${open}${dragon}${close}`
+          )
+          // Also try alternate id patterns snk might use
+          svg = svg.replace(
+            /(<symbol[^>]*id="pacman[^"]*"[^>]*>)([\s\S]*?)(<\/symbol>)/g,
+            (match, open, content, close) => `${open}${dragon}${close}`
+          )
+          fs.writeFileSync(svgPath, svg)
+          // Log what symbols exist for debugging
+          const symbols = [...svg.matchAll(/<symbol[^>]*id="([^"]+)"/g)].map(m => m[1])
+          console.log('Symbols found:', symbols)
+          console.log('Dragon patched successfully.')
+          SCRIPT
+          node replace.mjs
+
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
